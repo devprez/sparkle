@@ -151,7 +151,7 @@ const TemplateWrapper: React.FC<TemplateWrapperProps> = ({ venue }) => {
           fullscreen={fullscreen}
           hasBackButton={hasBackButton}
         >
-          <AnnouncementMessage banner={venue.banner} isUser />
+          <AnnouncementMessage banner={venue.banner} announcementForUser />
           {template}
           <ChatSidebar venue={venue} />
           <UserProfileModal venue={venue} />
