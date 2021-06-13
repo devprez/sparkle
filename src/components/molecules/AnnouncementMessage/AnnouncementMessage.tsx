@@ -4,6 +4,7 @@ import { faTimesCircle } from "@fortawesome/free-solid-svg-icons";
 import classNames from "classnames";
 
 import { getLinkFromText } from "utils/getLinkFromText";
+import { isDefined } from "utils/types";
 
 import { useShowHide } from "hooks/useShowHide";
 
@@ -29,7 +30,7 @@ export const AnnouncementMessage: React.FC<AnnouncementMessageProps> = ({
   } = useShowHide();
 
   useEffect(() => {
-    if (banner?.content) {
+    if (isDefined(banner?.content)) {
       showAnnouncementMessage();
     }
   }, [banner, showAnnouncementMessage]);
