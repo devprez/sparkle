@@ -4,7 +4,11 @@ Codebase for the Sparkle Platform, brought to you by [Sparkle](https://sparklesp
 
 ## Getting started
 
-The instructions below assume you already have a Firebase project setup and configured appropriately.
+First, you must set up a Firebase project and configure it appropriately.
+
+Log in to firebase at https://console.firebase.google.com/ 
+(other steps need to be added here)
+
 
 **Note**: If you're interested in setting up the project to run in your own environment but you're not sure how to go about it, feel free to [open an issue](https://github.com/sparkletown/sparkle/issues/new) asking for assistance.
 
@@ -23,9 +27,13 @@ You can read more about the various `.env` files that you can use at:
 
 - https://create-react-app.dev/docs/adding-custom-environment-variables#adding-development-environment-variables-in-env
 
-Install the platform dependencies with `npm`:
+Install the platform dependencies with `npm`.
+To see if you already have Node.js and npm installed and check the installed version, run the following commands:
 
-(**Note:** `npm` v7+ is not supported, it will cause issues with our `package-lock.json`, and you may end up with the wrong dependency versions)
+'node -v
+npm -v'
+
+(**Note:** `npm` v7+ is not supported, it will cause issues with our `package-lock.json`, and you may end up with the wrong dependency versions, please use 'npm' v6)
 
 ```bash
 npm install
